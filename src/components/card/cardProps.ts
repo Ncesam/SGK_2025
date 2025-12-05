@@ -5,7 +5,7 @@ export interface CardProps {
     isInShopCart?: boolean,
     isFavorite?: boolean,
     title: string,
-    price: number,
+    price: string | number,
     isBestSeller?: boolean,
-    imageURI?: ImageURISource
+    imageURI?: ImageURISource,
 }

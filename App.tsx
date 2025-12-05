@@ -1,5 +1,6 @@
 
 import Card from '@components/card';
+import CoverScreen from '@screens/cover';
 import { ThemeProvider } from '@theme/index';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -8,14 +9,18 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 function App() {
   const styles = StyleSheet.create({
-    container: {
-      backgroundColor: "#48B2E7"
+    testContainer: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: "100%",
+      flexDirection: "column",
+      gap: 16,
     }
   })
   return (
-    <SafeAreaProvider style={styles.container}>
+    <SafeAreaProvider>
       <ThemeProvider>
-          <Card price={1000} title='Sneaker' />
+        <CoverScreen />
       </ThemeProvider>
     </SafeAreaProvider>
   )
