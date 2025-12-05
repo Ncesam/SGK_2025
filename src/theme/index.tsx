@@ -1,9 +1,9 @@
 import { createContext, useMemo, useState } from "react";
 import { lightColors } from "./colors";
-import { IThemeContextType } from "types/theme";
+import { ThemeContextType } from "types/theme";
 
 
-export const ThemeProvider = ({ children }: React.PropsWithChildren) => {
+export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light'); 
 
   const toggleTheme = () => {
@@ -35,7 +35,7 @@ const themeConfig = {
 }
 
 
-export const ThemeContext = createContext<IThemeContextType>(
+export const ThemeContext = createContext<ThemeContextType>(
     {
         colors: lightColors,
         isDarkMode: false,

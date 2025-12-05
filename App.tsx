@@ -19,6 +19,7 @@ function App() {
   })
   return (
     <SafeAreaProvider>
+    <SafeAreaProvider>
       <ThemeProvider>
         <CoverScreen />
       </ThemeProvider>

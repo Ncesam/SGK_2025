@@ -1,6 +1,6 @@
 
 
-export interface IColorSchema {
+export interface ColorSchema {
     red: string;
     background: string;
     text: string;
@@ -13,8 +13,8 @@ export interface IColorSchema {
 }
 
 
-export interface IThemeContextType {
+export interface ThemeContextType {
     isDarkMode: boolean;
-    colors: IColorSchema;
+    colors: ColorSchema;
     toggleTheme: () => void;
 }
